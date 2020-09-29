@@ -202,22 +202,28 @@ newname.testfile
 **Copying**---What if we want to copy a file, instead of simply renaming or moving it?
 Use `cp` command (an abbreviated name for "copy"). This command has two different uses that work in the same way as `mv`:
 
-- Copy to same directory (copied file is renamed): `cp file newFilename`
-- Copy to other directory (copied file retains original name): `cp file directory`
+- Copy to the same directory: `cp file newFilename` (the copy gets a new name)
+- Copy to another directory: `cp file directory` (the copy retains the original name)
 
 Let's try this out.
 
 ```
 $ cp newname.testfile copy.testfile
 $ ls
-$ cp newname.testfile ..
-$ cd ..
-$ ls
 ```
 {: .language-bash}
 
 ```
 newname.testfile copy.testfile
+```
+{: .output}
+```
+$ cp newname.testfile ..
+$ cd ..
+$ ls
+```
+{: .language-bash}
+```
 files documents newname.testfile
 ```
 {: .output}
@@ -234,59 +240,69 @@ directory:
 
 ```
 $ ls
-$ rm newname.testfile
-$ ls
 ```
 {: .language-bash}
 
 ```
 files Documents newname.testfile
+```
+{: .output}
+```
+$ rm newname.testfile
+$ ls
+```
+{: .language-bash}
+```
 files Documents
 ```
 {: .output}
 
-That was simple enough. Directories are deleted in a similar manner using `rm -r` (the `-r` option
+That was simple enough. Empty directories can be deleted with `rmdir`. Non-empty
+directories can be removed (along with their content) using `rm -r` (where `-r`
 stands for 'recursive').
 
 ```
 $ ls
-$ rm -r Documents
+```
+{: .language-bash}
+```
+files Documents
+```
+{: .output}
+```
+rmdir files
+```
+{: .language-bash}
+```
+rmdir: failed to remove `files/': Directory not empty
+```
+{: .output}
+```
 $ rm -r files
 $ ls
 ```
 {: .language-bash}
-
 ```
-files Documents
-rmdir: failed to remove `files/': Directory not empty
-files
+Documents
 ```
 {: .output}
 
-What happened? As it turns out, `rmdir` is unable to remove directories that have stuff in them. To
-delete a directory and everything inside it, we will use a special variant of `rm`, `rm -rf
-directory`. This is probably the scariest command on UNIX- it will force delete a directory and all
-of its contents without prompting. **ALWAYS** double check your typing before using it... if you
-leave out the arguments, it will attempt to delete everything on your file system that you have
-permission to delete. So when deleting directories be very, very careful.
+What happened? `rmdir` is unable to remove directories that have files in them.
+To delete a directory and everything inside it, we use the `-r` option. This
+deletes the directory and all of its content, **without prompting for
+confirmation**. Be very careful!
 
-> ## What happens when you use `rm -rf` accidentally
+> ## What happens when you use `rm -r` accidentally?
 >
-> Steam is a major online sales platform for PC video games with over 125 million users. Despite
-> this, it hasn't always had the most stable or error-free code.
->
-> In January 2015, user kevyin on GitHub
-> [reported that Steam's Linux client had deleted every file on his computer](https://github.com/ValveSoftware/steam-for-linux/issues/3671).
-> It turned out that one of the Steam programmers had added the following line: `rm -rf
-> "$STEAMROOT/"*`. Due to the way that Steam was set up, the variable `$STEAMROOT` was never
-> initialized, meaning the statement evaluated to `rm -rf /*`. This coding error in the Linux client
-> meant that Steam deleted every single file on a computer when run in certain scenarios (including
-> connected external hard drives). Moral of the story: **be very careful** when using `rm -rf`!
+> Files deleted using `rm` cannot be recovered. Always be careful when using
+> `-r`, and consider using the `-i` option to get a confirmation prompt.
+> Alternatively, use `rm` to remove files, and then `rmdir` to remove the
+> directory once it is empty.
 {: .callout}
 
 ## Looking at files
 
-Sometimes it's not practical to read an entire file with `cat`- the file might be way too large,
+Sometimes it's not practical to read an entire file with `cat`: the file might be way too large,
 take a long time to open, or maybe we want to only look at a certain part of the file. As an
 example, we are going to look at a large and complex file type used in bioinformatics- a .gtf file.
 The GTF2 format is commonly used to describe the location of genetic features in a genome.

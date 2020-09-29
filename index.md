@@ -3,29 +3,28 @@ layout: lesson
 root: .
 ---
 
-This workshop is an introduction to using high-performance computing systems
-effectively. We obviously can't cover every case or give an exhaustive course on
-parallel programming in just two days of teaching time. Instead, this workshop
-is intended to give students a good introduction and overview of the tools
-available and how to use them effectively.
-
-By the end of this workshop, students will know how to:
-
-* Use the UNIX command line (also known as terminal or shell) to operate a computer, connect to a cluster, and write simple shell
-  scripts.
-* Submit and manage jobs on a cluster using a scheduler, transfer files, and use software through
-  environment modules.
-* Learn the fundamentals of programming in Python or Chapel.
-* Understand parallel programming strategies, and write basic parallel code in Python or Chapel.
+The “shell” is the command-line interface of Linux and other UNIX operating
+systems. In this three-hour hands-on workshop, you will learn how to connect to
+a remote Linux system, use basic commands, navigate and work with files and
+directories, use wildcards and pipes to build powerful commands, and write
+simple shell scripts to automate your work. These basic skills will make you
+autonomous with Linux and allow you to continue learning on your own. They are
+also prerequisites for learning to use Linux high-performance computers.
 
 > ## NOTE
 >
-> - This is the draft HPC Carpentry release. Comments and feedback are welcome.
-> - Additionally, please explore the lesson, [shell-novice](https://swcarpentry.github.io/shell-novice/) until this one is complete.
+> - This is the draft HPC Carpentry release, with modifications for use on the
+>   Plato HPC cluster at the University of Saskatchewan. Comments and feedback
+>   are welcome.
 {: .callout}
 
 > ## Prerequisites
->
-> There are no real prerequisites for this lesson, but prior programming and/or command line
-> experience will be helpful.
+> - Familiarity with computers is expected, but no previous experience with
+>   Linux/UNIX is required.
+> - Attendees must bring a laptop with SSH capabilities: a terminal and SSH
+>   client for Linux, MacOS or other UNIX systems; MobaXterm or PUTTY for
+>   Windows. We can help attendees prepare their laptop on request.
+> - Campus wifi users must be connected to the *uofs-secure* access point.
+> - Remote users must be connected to the network through the USask VPN.
+> - See the [Setup page](setup.md) for details.
 {: .prereq}

@@ -112,13 +112,13 @@ remote_theme: carpentries/carpentries-theme
 # * workshop_host_homedir - The location of the home directory on the remote host
 #
 # Example: Graham cluster at Compute Canada, University of Waterloo
-workshop_host: "Graham"
-workshop_host_id: "ComputeCanada_Graham"
-workshop_host_login: "graham.computecanada.ca"
-workshop_host_location: "University of Waterloo"
-workshop_host_prompt: "[yourUsername@gra-login1 ~]$ "
+workshop_host: "Plato"
+workshop_host_id: "USask_Plato"
+workshop_host_login: "plato.usask.ca"
+workshop_host_location: "University of Saskatchewan"
+workshop_host_prompt: "[nsid@platolgn01 ~]$ "
 workshop_host_homedir: "/home"
-workshop_sched_id: "ComputeCanada_Graham_slurm"
+workshop_sched_id: "USask_Plato_slurm"
 # Example: Cirrus at EPCC, The University of Edinburgh
 # workshop_host: "Cirrus"
 # workshop_host_id: "EPCC_Cirrus"

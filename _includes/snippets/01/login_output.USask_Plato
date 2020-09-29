@@ -1,0 +1,14 @@
+The authenticity of host 'plato.usask.ca (10.192.136.129)' can't be established.
+ECDSA key fingerprint is SHA256:dbasMXAASoLfwOdPJq0eyJD6ffEQmPC22D4HTP2EwlU.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? # type "yes"
+Warning: Permanently added 'plato.usask.ca,10.192.136.129' (ECDSA) to the list of known hosts.
+nsid@plato.usask.ca's password:  # no text appears as you enter your password
+Last login: Mon Sep 28 13:56:08 2020 from faser-fi3862.usask.ca
+╔════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                    ║
+║  ██████  ██      ██████  ██████  ██████  | Login node                              ║
+║  ██  ██  ██      ██  ██    ██    ██  ██  | On cluster `plato.usask.ca`             ║
+║  ██████  ██      ██████    ██    ██  ██  |                                         ║
+║  ██      ██████  ██  ██    ██    ██████  | University of Saskatchewan (USask)      ║
+║                                                                                    ║
+╚════════════════════════════════════════════════════════════════════════════════════╝

@@ -1,12 +1,11 @@
 ---
 title: "Instructor Notes"
 ---
-# Instructor Notes
 
-## Teaching Overview
+# Instructor
 
-## Specific Lessons
-
-### [Why Use a Cluster?]({{ page.root }}/01-hpc-intro/)
+> [Olivier Fisette](https://wiki.usask.ca/x/FINaYQ), Ph.D.<br/>
+> Advanced Research Computing, ICT<br/>
+> University of Saskatchewan
 
 {% include links.md %}

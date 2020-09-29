@@ -1,6 +1,7 @@
 ---
 title: Discussion
 ---
-FIXME
+
+Online discussion is not available for this lesson.
 
 {% include links.md %}

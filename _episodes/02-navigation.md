@@ -147,7 +147,6 @@ Let's go there now, look around, and then return to our home directory.
 ```
 $ cd /
 $ ls
-$ cd ~
 ```
 {: .language-bash}
 ```
@@ -155,6 +154,10 @@ bin   cvmfs  etc   initrd  lib64  localscratch  mnt  opt   project  root  sbin  
 boot  dev    home  lib     local  media         nix  proc  ram      run   scratch  sys  usr  work
 ```
 {: .output}
+```
+$ cd ~
+```
+{: .language-bash}
 
 The "home" directory is the one where we generally want to keep all of our files. Other folders on a
 UNIX OS contain system files, and get modified and changed as you install new software or upgrade
@@ -198,14 +201,20 @@ Let's try these out now:
 ```
 $ cd ./documents
 $ pwd
-$ cd ..
-$ pwd
 ```
 {: .language-bash}
 
 ```
-{{ site.workshop_host_homedir }}/yourUserName/documents
-{{ site.workshop_host_homedir }}/yourUserName
+{{ site.workshop_host_homedir }}/nsid/documents
+```
+{: .output}
+```
+$ cd ..
+$ pwd
+```
+{: .language-bash}
+```
+{{ site.workshop_host_homedir }}/nsid
 ```
 {: .output}
 
