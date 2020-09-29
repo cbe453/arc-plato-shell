@@ -165,6 +165,7 @@ script!
 ```
 # This won't show anything.
 ```
+{: .language-bash}
 
 Now lets try adding this to our script with `nano`. Edit your script to look something like this:
 
@@ -174,6 +175,7 @@ Now lets try adding this to our script with `nano`. Edit your script to look som
 # This is a comment... they are nice for making notes!
 echo "Our script worked!"
 ```
+{: .language-bash}
 
 When we run our script, the output should be unchanged from before!
 
@@ -341,6 +343,7 @@ do
         echo $VAR
 done
 ```
+{: .language-bash}
 
 ```
 $ ./loop.sh
@@ -417,7 +420,7 @@ gene_association.fb.gz
 > ```
 > {: .output}
 >
-> Can you write a script that prints off the name of every file in a directory with ".processed"
+> Can you write a script that prints off the name of every file in a directory with `.processed`
 > added to it?
 > > ## Solution
 > > 

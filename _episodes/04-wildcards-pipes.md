@@ -38,7 +38,7 @@ would be equivalent to all `.txt` files in a directory for instance. `*` by itse
 Let's use our example data to see what I mean.
 
 ```
-$ tar xvf bash-lesson.tar.gz
+$ tar xf bash-lesson.tar.gz
 $ ls
 ```
 {: .language-bash}
@@ -173,19 +173,28 @@ it.
 
 ```
 $ echo "this is a test"
-$ echo "this is a test" > test.txt
-$ ls
-$ cat test.txt
 ```
 {: .language-bash}
-
 ```
 this is a test
-
+```
+{: .output}
+```
+$ echo "this is a test" > test.txt
+$ ls
+```
+{: .language-bash}
+```
 bash-lesson.tar.gz                           fastq
 dmel-all-r6.19.gtf                           gene_association.fb
 dmel_unique_protein_isoforms_fb_2016_01.tsv  test.txt
-
+```
+{: .output}
+```
+$ cat test.txt
+```
+{: .language-bash}
+```
 this is a test
 ```
 {: .output}
@@ -194,12 +203,17 @@ Awesome, let's try that with a more complicated command, like `wc -l`.
 
 ```
 $ wc -l * > word_counts.txt
-$ cat word_counts.txt
 ```
 {: .language-bash}
 ```
 wc: fastq: Is a directory
-
+```
+{: .output}
+```
+$ cat word_counts.txt
+```
+{: .language-bash}
+```
     53037 bash-lesson.tar.gz
    542048 dmel-all-r6.19.gtf
     22129 dmel_unique_protein_isoforms_fb_2016_01.tsv
