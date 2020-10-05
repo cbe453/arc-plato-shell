@@ -11,17 +11,16 @@ Linux/UNIX is required.
 
 ## SSH
 
-Attendees must bring a laptop with SSH capabilities: a terminal and SSH client
-for Linux, MacOS or other UNIX systems; MobaXterm or PUTTY for Windows. We can
-help attendees prepare their laptop on request.
+Attendees must bring a laptop with a terminal and SSH capabilities. We can help
+attendees prepare their laptop on request.
 
 - **Windows:** Install MobaXterm from
-  [http://mobaxterm.mobatek.net](http://mobaxterm.mobatek.net). You will want to
-  get the Home edition (Installer edition).
+  [http://mobaxterm.mobatek.net](http://mobaxterm.mobatek.net). Choose “Home
+  edition” (Installer edition)” on the download page.
 
-- **Apple macOS**: SSH is pre-installed.
+- **Apple macOS:** Terminal and SSH programs are built in.
 
-- **Linux:** SSH is pre-installed.
+- **Linux:** Terminal and SSH programs are built in.
 
 ## Campus wifi connection
 
