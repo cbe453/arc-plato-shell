@@ -11,7 +11,7 @@ simple shell scripts to automate your work. These basic skills will make you
 autonomous with Linux and allow you to continue learning on your own. They are
 also prerequisites for learning to use Linux high-performance computers.
 
-> ## NOTE
+> ## Note
 >
 > - This is the draft HPC Carpentry release, with modifications for use on the
 >   Plato HPC cluster at the University of Saskatchewan. Comments and feedback

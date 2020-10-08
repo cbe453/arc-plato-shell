@@ -7,6 +7,10 @@ permalink: /reference/
 
 There is currently no glossary available for this lesson.
 
+## Local resources
+
+* [Advanced Research Computing (ARC)](https://wiki.usask.ca/x/3YAiY) at the
+  University of Saskathewan
 
 ## External References
 
