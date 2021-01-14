@@ -219,8 +219,8 @@ $ pwd
 {: .output}
 
 Many commands also have multiple behaviours that you can invoke with command line 'flags.' What is a
-flag? It's generally just your command followed by a '-' and the name of the flag (sometimes it's
-'--' followed by the name of the flag). You follow the flag(s) with any additional arguments you
+flag? It's generally just your command followed by a `-` and the name of the flag (sometimes it's
+`--` followed by the name of the flag). You follow the flag(s) with any additional arguments you
 might need.
 
 We're going to demonstrate a couple of these "flags" using `ls`.
