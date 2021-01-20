@@ -45,10 +45,16 @@ can find Terminal under "Utilities" in the Applications menu.
 
 ### Windows
 
-While Windows does have a command-line interface known as the "Command Prompt" that has its roots in
-MS-DOS (Microsoft Disk Operating System) it does not have an SSH tool built into it and so one needs
-to be installed. There are a variety of programs that can be used for this; two common ones we
-describe here, as follows:
+#### PowerShell
+
+In recent builds (1809 and later) of Windows 10, you can use the PowerShell
+terminal. The terminal can be started from the Start menu. In older builds of
+Windows 10, the PowerShell terminal is available but the OpenSSH client that
+allows connecting to the remote supercomputer is not installed by default. It
+can be installed as an optional Windows component, however.
+
+In older Windows systems, or if OpenSSH is not installed in Windows 10, you will
+need to use a third-party terminal as described in the next sections.
 
 #### MobaXterm
 
@@ -58,14 +64,12 @@ you will note that there are two editions of the home version available: Portabl
 portable edition puts all MobaXterm content in a folder on the desktop (or anywhere else you would
 like it) so that it is easy to add plug-ins or remove the software. The installer edition adds
 MobaXterm to your Windows installation and menu as any other program you might install.
-If you are not sure that you will continue to use MobaXterm in the future, the portable edition
-is likely the best choice for you.
 
 Download the version that you would like to use and install it as you would any other software on
 your Windows installation. Once the software is installed you can run it by either opening the
 folder installed with the portable edition and double-clicking on the executable file named
 `MobaXterm_Personal_11.1` (your version number may vary) or, if the installer edition was used,
-finding the executable through either the start menu or the Windows search option.
+finding the executable through either the Start menu or the Windows search option.
 
 Once the MobaXterm window is open you should see a large button in the middle of that window with
 the text "Start Local Terminal". Click this button and you will have a terminal window at your
@@ -75,13 +79,11 @@ disposal.
 
 It is strictly speaking not necessary to have a terminal running on your local computer in order to
 access and use a remote system, only a window into the remote system once connected. PuTTY is likely
-It is, strictly speaking, not necessary to have a terminal running on your local computer in order to
-access and use a remote system, only a window into the remote system once connected. PuTTY is likely
-the oldest, most well-known, and widely used software solution to take this approach.
+the oldest, and most well-known and widely used software solution to take this approach.
 
 PuTTY is available for free download from [www.putty.org](http://www.putty.org/). Download the
 version that is correct for your operating system and install it as you would other software on your
-Windows system. Once installed it will be available through the start menu or similar.
+Windows system. Once installed it will be available through the Start menu or similar.
 
 Running PuTTY will not initially produce a terminal but instead a window full of connection options.
 Putting the address of the remote system in the "Host Name (or IP Address)" box and either pressing
@@ -92,12 +94,6 @@ as:" prompt and then for a password. If both of these are passed correctly then 
 access to the system and will see a message saying so within the terminal. If you need to escape the
 authentication process you can hold the Control (<kbd>Ctrl</kbd>) key and press the <kbd>c</kbd> key
 to exit and start again.
-
-Note that you may want to paste in your password rather than typing it. Use <kbd>Ctrl</kbd> plus a
-right-click of the mouse to paste content from the clipboard to the PuTTY terminal.
-
-For those logging in with PuTTY it would likely be best to cover the terminal basics already
-mentioned above before moving on to navigating the remote system.
 
 ## Logging onto the system
 

@@ -148,12 +148,12 @@ We've successfully created a file. What about a directory? We've actually done t
 `mkdir`.
 
 ```
-$ mkdir files
+$ mkdir paper
 $ ls
 ```
 {: .language-bash}
 ```
-draft.txt  files
+draft.txt  paper
 ```
 {: .output}
 
@@ -164,8 +164,8 @@ draft.txt  files
 The same syntax works for both files and directories: `mv <file/directory> <new-location>`
 
 ```
-$ mv draft.txt files
-$ cd files
+$ mv draft.txt paper
+$ cd paper
 $ ls
 ```
 {: .language-bash}
@@ -174,18 +174,18 @@ draft.txt
 ```
 {: .output}
 
-**Renaming**---`draft.txt` isn't a very descriptive name. How do we go about changing it?
+**Renaming**---How do we go about changing the name of a file?
 It turns out that `mv` is also used to rename files and directories. Although this may not seem
 intuitive at first, think of it as *moving* a file to be stored under a different name. The syntax is
 quite similar to moving files: `mv oldName newName`.
 
 ```
-$ mv draft.txt newname.testfile
+$ mv draft.txt final.txt
 $ ls
 ```
 {: .language-bash}
 ```
-newname.testfile
+final.txt
 ```
 {: .output}
 
@@ -208,23 +208,23 @@ Use `cp` command (an abbreviated name for "copy"). This command has two differen
 Let's try this out.
 
 ```
-$ cp newname.testfile copy.testfile
+$ cp final.txt backup.txt
 $ ls
 ```
 {: .language-bash}
 
 ```
-newname.testfile copy.testfile
+backup.txt  final.txt
 ```
 {: .output}
 ```
-$ cp newname.testfile ..
+$ cp backup.txt ..
 $ cd ..
 $ ls
 ```
 {: .language-bash}
 ```
-files documents newname.testfile
+backup.txt  paper
 ```
 {: .output}
 
@@ -244,16 +244,16 @@ $ ls
 {: .language-bash}
 
 ```
-files Documents newname.testfile
+paper backup.txt
 ```
 {: .output}
 ```
-$ rm newname.testfile
+$ rm backup.txt
 $ ls
 ```
 {: .language-bash}
 ```
-files Documents
+paper
 ```
 {: .output}
 
@@ -262,28 +262,19 @@ directories can be removed (along with their content) using `rm -r` (where `-r`
 stands for 'recursive').
 
 ```
+rmdir paper
+```
+{: .language-bash}
+```
+rmdir: failed to remove `paper/': Directory not empty
+```
+{: .output}
+```
+$ rm -r paper
 $ ls
 ```
 {: .language-bash}
 ```
-files Documents
-```
-{: .output}
-```
-rmdir files
-```
-{: .language-bash}
-```
-rmdir: failed to remove `files/': Directory not empty
-```
-{: .output}
-```
-$ rm -r files
-$ ls
-```
-{: .language-bash}
-```
-Documents
 ```
 {: .output}
 
@@ -424,5 +415,3 @@ too quickly! What are the alternatives? Try all of these out and see which ones 
 - `tail file`: Same as `head`, but prints the last 10 lines in a file to the console.
 - `less file`: Opens a file and display as much as possible on-screen. You can scroll with `Enter`
   or the arrow keys on your keyboard. Press `q` to close the viewer.
-
-Out of `cat`, `head`, `tail`, and `less`, which method of reading files is your favourite? Why?

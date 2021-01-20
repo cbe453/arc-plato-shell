@@ -117,12 +117,9 @@ $ pwd
 ```
 {: .language-bash}
 ```
-~/documents
+/home/yourUsername/documents
 ```
 {: .output}
-
-What is the `~` character? When using the shell, `~` is a shortcut that represents
-`{{ site.workshop_host_homedir }}/yourUserName`. 
 
 Now that we know how to use `cd`, we can go anywhere. That's a lot of responsibility. What happens
 if we get "lost" and want to get back to where we started?
@@ -137,6 +134,8 @@ $ cd
 {: .language-bash}
 
 
+What is the `~` character? When using the shell, `~` is a shortcut that represents
+`{{ site.workshop_host_homedir }}/yourUserName`. 
 
 A quick note on the structure of a UNIX (Linux/Mac/Android/Solaris/etc) filesystem. Directories and
 absolute paths (i.e. exact position in the system) are always prefixed with a `/`. `/` by itself is the "root"
@@ -205,7 +204,7 @@ $ pwd
 {: .language-bash}
 
 ```
-{{ site.workshop_host_homedir }}/nsid/documents
+{{ site.workshop_host_homedir }}/yourUsername/documents
 ```
 {: .output}
 ```
@@ -214,7 +213,7 @@ $ pwd
 ```
 {: .language-bash}
 ```
-{{ site.workshop_host_homedir }}/nsid
+{{ site.workshop_host_homedir }}/yourUsername
 ```
 {: .output}
 
@@ -263,7 +262,7 @@ $ ls -l -a
 {: .language-bash}
 
 ```
-{{ site.workshop_host_prompt }} ls -la
+{{ site.workshop_host_prompt }} ls -l -a
 total 36
 drwx--S--- 5 yourUsername tc001 4096 Nov 28 09:58 .
 drwxr-x--- 3 root         tc001 4096 Nov 28 09:40 ..
@@ -277,6 +276,14 @@ drwx--S--- 2 yourUsername tc001 4096 Nov 28 09:58 .ssh
 ```
 {: .output}
 
+Most programs allow one-letter flags to be merged together, preceeded by a
+single `-`. Therefore, the above example can also be written as:
+
+```
+$ ls -la
+```
+{: .language-bash}
+
 Flags generally precede any arguments passed to a UNIX command. `ls` actually takes an extra
 argument that specifies a directory to look into. When you use flags and arguments together, the
 syntax (how it's supposed to be typed) generally looks something like this:
@@ -286,10 +293,10 @@ $ command <flags/options> <arguments>
 ```
 {: .language-bash}
 
-So using `ls -l -a` on a different directory than the one we're in would look something like:
+So using `ls` with `-l` and `-a` on a different directory than the one we're in would look something like:
 
 ```
-$ ls -l -a ~/documents
+$ ls -la ~/documents
 ```
 {: .language-bash}
 
