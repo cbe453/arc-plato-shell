@@ -14,7 +14,7 @@ also prerequisites for learning to use Linux-based high-performance computers.
 > ## Note
 >
 > - This is the draft HPC Carpentry release, with modifications for use on the
->   Plato HPC cluster at the University of Saskatchewan. Comments and feedback
+>   Plato cluster at the University of Saskatchewan. Comments and feedback
 >   are welcome.
 {: .callout}
 

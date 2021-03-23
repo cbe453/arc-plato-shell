@@ -57,7 +57,7 @@ More specifically, when we type `whoami` the shell:
 Next, let's find out where we are by running a command called `pwd` (which stands for "print working
 directory"). ("Directory" is another word for "folder"). At any moment, our **current working directory** (where we are) is the directory that
 the computer assumes we want to run commands in unless we explicitly specify something else. Here,
-the computer's response is `{{ site.workshop_host_homedir }}/yourUsername`, which is ``yourUsername`` **home directory**.
+the computer's response is `{{ site.workshop_host_homedir }}/yourUsername/HPC`, which is ``yourUsername``’s **home directory**.
 Note that the location of your home directory may differ from system to system.
 
 ~~~
@@ -65,7 +65,7 @@ $ pwd
 ~~~
 {: .language-bash}
 ~~~
-{{ site.workshop_host_homedir }}/yourUsername
+{{ site.workshop_host_homedir }}/yourUsername/HPC
 ~~~
 {: .output}
 
@@ -117,7 +117,7 @@ $ pwd
 ```
 {: .language-bash}
 ```
-/home/yourUsername/documents
+/globalhome/yourUsername/HPC/documents
 ```
 {: .output}
 
@@ -127,7 +127,7 @@ if we get "lost" and want to get back to where we started?
 To go back to your home directory, the following three commands will work:
 
 ```
-$ cd {{ site.workshop_host_homedir }}/yourUserName
+$ cd {{ site.workshop_host_homedir }}/yourUserName/HPC
 $ cd ~
 $ cd
 ```
@@ -135,7 +135,7 @@ $ cd
 
 
 What is the `~` character? When using the shell, `~` is a shortcut that represents
-`{{ site.workshop_host_homedir }}/yourUserName`. 
+`{{ site.workshop_host_homedir }}/yourUserName/HPC`. 
 
 A quick note on the structure of a UNIX (Linux/Mac/Android/Solaris/etc) filesystem. Directories and
 absolute paths (i.e. exact position in the system) are always prefixed with a `/`. `/` by itself is the "root"
@@ -149,8 +149,9 @@ $ ls
 ```
 {: .language-bash}
 ```
-bin   cvmfs  etc   initrd  lib64  localscratch  mnt  opt   project  root  sbin     srv  tmp  var
-boot  dev    home  lib     local  media         nix  proc  ram      run   scratch  sys  usr  work
+bin   CMC    datastore   etc         lib    lost+found  mnt      opt   run   sys       usr
+boot  cvmfs  datastore2  globalhome  lib64  media       net      proc  sbin  tftpboot  var
+cm    data   dev         home        local  misc        oldhome  root  srv   tmp
 ```
 {: .output}
 ```
@@ -204,7 +205,7 @@ $ pwd
 {: .language-bash}
 
 ```
-{{ site.workshop_host_homedir }}/yourUsername/documents
+{{ site.workshop_host_homedir }}/yourUsername/HPC/documents
 ```
 {: .output}
 ```
@@ -213,7 +214,7 @@ $ pwd
 ```
 {: .language-bash}
 ```
-{{ site.workshop_host_homedir }}/yourUsername
+{{ site.workshop_host_homedir }}/yourUsername/HPC
 ```
 {: .output}
 
@@ -264,15 +265,15 @@ $ ls -l -a
 ```
 {{ site.workshop_host_prompt }} ls -l -a
 total 36
-drwx--S--- 5 yourUsername tc001 4096 Nov 28 09:58 .
-drwxr-x--- 3 root         tc001 4096 Nov 28 09:40 ..
--rw-r--r-- 1 yourUsername tc001   18 Dec  6  2016 .bash_logout
--rw-r--r-- 1 yourUsername tc001  193 Dec  6  2016 .bash_profile
--rw-r--r-- 1 yourUsername tc001  231 Dec  6  2016 .bashrc
-drwxr-sr-x 2 yourUsername tc001 4096 Nov 28 09:58 documents
--rw-r--r-- 1 yourUsername tc001  334 Mar  3  2017 .emacs
-drwxr-xr-x 4 yourUsername tc001 4096 Aug  2  2016 .mozilla
-drwx--S--- 2 yourUsername tc001 4096 Nov 28 09:58 .ssh
+drwxr-x--- 5 yourUsername yourUsername 4096 Nov 28 09:58 .
+drwxr-xr-x 3 root         root         4096 Nov 28 09:40 ..
+-rw-r----- 1 yourUsername yourUsername   18 Dec  6  2016 .bash_logout
+-rw-r----- 1 yourUsername yourUsername  193 Dec  6  2016 .bash_profile
+-rw-r----- 1 yourUsername yourUsername  231 Dec  6  2016 .bashrc
+drwxr-x--- 2 yourUsername yourUsername 4096 Nov 28 09:58 documents
+-rw-r----- 1 yourUsername yourUsername  334 Mar  3  2017 .emacs
+drwxr-x--- 4 yourUsername yourUsername 4096 Aug  2  2016 .mozilla
+drwx------ 2 yourUsername yourUsername 4096 Nov 28 09:58 .ssh
 ```
 {: .output}
 
@@ -301,8 +302,8 @@ $ ls -la ~/documents
 {: .language-bash}
 
 ```
-drwxr-sr-x 2 yourUsername tc001 4096 Nov 28 09:58 .
-drwx--S--- 5 yourUsername tc001 4096 Nov 28 09:58 ..
+drwxr-x--- 2 yourUsername yourUsername 4096 Nov 28 09:58 .
+drwxr-x--- 5 yourUsername yourUsername 4096 Nov 28 09:58 ..
 ```
 {: .output}
 
@@ -370,7 +371,7 @@ Mandatory arguments to long options are mandatory for short options too.
 > message similar to this:
 >
 > ~~~
-> [remote]$ ls -j
+> $ ls -j
 > ~~~
 > {: .language-bash}
 > 

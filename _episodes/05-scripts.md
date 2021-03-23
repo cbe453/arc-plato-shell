@@ -62,7 +62,7 @@ Strangely enough, Bash can't find our script. As it turns out, Bash will only lo
 directories for scripts to run. To run anything else, we need to tell Bash exactly where to look. To
 run a script that we wrote ourselves, we need to specify the full path to the file, followed by the
 filename. We could do this one of two ways: either with our absolute path
-`{{ site.workshop_host_homedir }}/yourUserName/demo.sh`, or with the relative path `./demo.sh`.
+`{{ site.workshop_host_homedir }}/yourUsername/HPC/demo.sh`, or with the relative path `./demo.sh`.
 
 ```
 $ ./demo.sh
@@ -83,14 +83,14 @@ $ ls -l
 {: .language-bash}
 
 ```
--rw-rw-r-- 1 yourUsername tc001 12534006 Jan 16 18:50 bash-lesson.tar.gz
--rw-rw-r-- 1 yourUsername tc001       40 Jan 16 19:41 demo.sh
--rw-rw-r-- 1 yourUsername tc001 77426528 Jan 16 18:50 dmel-all-r6.19.gtf
--rw-r--r-- 1 yourUsername tc001   721242 Jan 25  2016 dmel_unique_protein_isoforms_fb_2016_01.tsv
-drwxrwxr-x 2 yourUsername tc001     4096 Jan 16 19:16 fastq
--rw-r--r-- 1 yourUsername tc001  1830516 Jan 25  2016 gene_association.fb.gz
--rw-rw-r-- 1 yourUsername tc001       15 Jan 16 19:17 test.txt
--rw-rw-r-- 1 yourUsername tc001      245 Jan 16 19:24 word_counts.txt
+-rw-r----- 1 yourUsername yourUsername 12534006 Jan 16 18:50 bash-lesson.tar.gz
+-rw-r----- 1 yourUsername yourUsername       40 Jan 16 19:41 demo.sh
+-rw-r----- 1 yourUsername yourUsername 77426528 Jan 16 18:50 dmel-all-r6.19.gtf
+-rw-r----- 1 yourUsername yourUsername   721242 Jan 25  2016 dmel_unique_protein_isoforms_fb_2016_01.tsv
+drwxr-x--- 2 yourUsername yourUsername     4096 Jan 16 19:16 fastq
+-rw-r----- 1 yourUsername yourUsername  1830516 Jan 25  2016 gene_association.fb.gz
+-rw-r----- 1 yourUsername yourUsername       15 Jan 16 19:17 test.txt
+-rw-r----- 1 yourUsername yourUsername      245 Jan 16 19:24 word_counts.txt
 ```
 {: .output}
 
@@ -284,7 +284,7 @@ $ echo $TEST
 ```
 {: .language-bash}
 ```
-total 90372 -rw-rw-r-- 1 jeff jeff 12534006 Jan 16 18:50 bash-lesson.tar.gz -rwxrwxr-x. 1 jeff jeff 40 Jan 1619:41 demo.sh -rw-rw-r-- 1 jeff jeff 77426528 Jan 16 18:50 dmel-all-r6.19.gtf -rw-r--r-- 1 jeff jeff 721242 Jan 25 2016 dmel_unique_protein_isoforms_fb_2016_01.tsv drwxrwxr-x. 2 jeff jeff 4096 Jan 16 19:16 fastq -rw-r--r-- 1 jeff jeff 1830516 Jan 25 2016 gene_association.fb.gz -rw-rw-r-- 1 jeff jeff 15 Jan 16 19:17 test.txt -rw-rw-r-- 1 jeff jeff 245 Jan 16 19:24 word_counts.txt
+total 90372 -rw-r----- 1 yourUsername yourUsername 12534006 Jan 16 18:50 bash-lesson.tar.gz -rwxr-x---. 1 yourUsername yourUsername 40 Jan 1619:41 demo.sh -rw-r----- 1 yourUsername yourUsername 77426528 Jan 16 18:50 dmel-all-r6.19.gtf -rw-r----- 1 yourUsername yourUsername 721242 Jan 25 2016 dmel_unique_protein_isoforms_fb_2016_01.tsv drwxrwxr-x. 2 yourUsername yourUsername 4096 Jan 16 19:16 fastq -rw-r----- 1 yourUsername yourUsername 1830516 Jan 25 2016 gene_association.fb.gz -rw-r----- 1 yourUsername yourUsername 15 Jan 16 19:17 test.txt -rw-r----- 1 yourUsername yourUsername 245 Jan 16 19:24 word_counts.txt
 ```
 {: .output}
 

@@ -117,7 +117,7 @@ workshop_host_id: "USask_Plato"
 workshop_host_login: "plato.usask.ca"
 workshop_host_location: "University of Saskatchewan"
 workshop_host_prompt: "[nsid@platolgn01 ~]$ "
-workshop_host_homedir: "/home"
+workshop_host_homedir: "/globalhome"
 workshop_sched_id: "USask_Plato_slurm"
 # Example: Cirrus at EPCC, The University of Edinburgh
 # workshop_host: "Cirrus"
