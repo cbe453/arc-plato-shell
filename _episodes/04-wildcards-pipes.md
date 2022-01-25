@@ -38,7 +38,7 @@ would be equivalent to all `.txt` files in a directory for instance. `*` by itse
 Let's use our example data to see what I mean.
 
 ```
-$ tar xf bash-lesson.tar.gz
+$ tar -xf bash-lesson.tar.gz
 $ ls
 ```
 {: .language-bash}
