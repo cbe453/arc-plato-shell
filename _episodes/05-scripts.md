@@ -105,7 +105,7 @@ understand **what each field of a given row represents**, working left to right.
      + The first set of `rwx` are the permissions that the owner has (in this case the owner is
        `yourUsername`).
      + The second set of `rwx`s are permissions that other members of the owner's group share (in
-       this case, the group is named `tc001`).
+       this case, the group is named `yourUsername`).
      + The third set of `rwx`s are permissions that anyone else with access to this computer can do
        with a file. Though files are typically created with read permissions for everyone, typically
        the permissions on your home directory prevent others from being able to access the file in
