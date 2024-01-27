@@ -306,60 +306,16 @@ $ wget {{site.url}}{{site.baseurl}}/files/bash-lesson.tar.gz
 ```
 {: .language-bash}
 
-> ## Problems with `wget`?
+> ## Another tool: `curl`
 >
-> `wget` is a stand-alone application for downloading things over HTTP/HTTPS and FTP/FTPS
-> connections, and it does the job admirably &ndash; when it is installed. 
->
-> Some operating systems instead come with [cURL]( https://curl.haxx.se/), which is the
-> command-line interface to `libcurl`, a powerful library for programming interactions with remote
-> resources over a wide variety of network protocols. If you have `curl` but not `wget`, then try
-> this command instead:
+> [cURL]( https://curl.haxx.se/) is the command-line interface to `libcurl`, a
+> powerful library for programming interactions with remote resources over a
+> wide variety of network protocols. You can use cURL as an alternative to wget:
 >
 > ```
 > $ curl -O {{site.url}}{{site.baseurl}}/files/bash-lesson.tar.gz
 > ```
 > {: .language-bash}
->
-> For very large downloads, you might consider using [Aria2](https://aria2.github.io/), which has
-> support for downloading the same file from multiple mirrors. You have to install it separately,
-> but if you have it, try this to get it faster than your neighbors:
->
-> ```
-> $ aria2c {{site.url}}{{site.baseurl}}/files/bash-lesson.tar.gz https://hpc-carpentry.github.io/hpc-shell/files/bash-lesson.tar.gz
-> ```
-> {: .language-bash}
->
-> > ## Install cURL
-> >
-> > * macOS: `curl` is pre-installed on macOS. If you must have the latest version you can `brew
-> >   install` it, but only do so if the stock version has failed you.
-> > * Windows: `curl` comes preinstalled for the Windows 10 command line. For earlier Windows
-> >   systems, you can download the executable [directly](https://curl.haxx.se/windows/); run it in
-> >   place. 
-> >
-> >   `curl` comes preinstalled in [Git for Windows](https://gitforwindows.org/) and [Windows
-> >   Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). On
-> >   [Cygwin](https://www.cygwin.com/), run the setup program again and select the `curl`
-> >   package to install it.
-> > * Linux: `curl` is packaged for every major distribution. You can install it through the usual
-> >   means.
-> >   - Debian, Ubuntu, Mint: `sudo apt install curl`
-> >   - CentOS, Red Hat: `sudo yum install curl` or `zypper install curl`
-> >   - Fedora: `sudo dnf install curl`
-> {: .solution}
->
-> > ## Install Aria2
-> >
-> > * macOS: `aria2c` is available through a homebrew. `brew install aria2`.
-> > * Windows: download the latest [release](https://github.com/aria2/aria2/releases) and run
-> >   `aria2c` in place. If you're using the [Windows Subsystem for Linux](
-> >   https://docs.microsoft.com/en-us/windows/wsl/install-win10), 
-> > * Linux: every major distribution has an `aria2` package. Install it by the usual means.
-> >   - Debian, Ubuntu, Mint: `sudo apt install aria2`
-> >   - CentOS, Red Hat: `sudo yum install aria2` or `zypper install aria2`
-> >   - Fedora: `sudo dnf install aria2`
-> {: .solution}
 {: .callout}
 
 You'll commonly encounter `.tar.gz` archives while working in UNIX. To extract the files from a
