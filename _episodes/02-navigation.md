@@ -173,13 +173,13 @@ your OS.
 >   here is available throughout the HPC system and files stored here are often backed up (but check your local configuration to be sure!). Files stored
 >   here are typically slower to access, the data is actually stored on another computer and is
 >   being transmitted and made available over the network!
-> * **Scratch** - Some systems may offer "scratch" space. Scratch space is typically faster to use
->   than your home directory or network filesystem, but is not usually backed up, and should not be
+> * **Scratch** - Some systems may offer "scratch" space for temporary files. Scratch space is typically faster to use
+>   than your home directory or network filesystem but is not backed up and should not be
 >   used for long term storage.
-> * **Work file system** - As an alternative to (or sometimes as well as) Scratch space, some HPC 
->   systems offer fast file system access as a work file system. Typically, this will have 
->   higher performance than your home directory or network file system and may not be 
->   backed up. It differs from scratch space in that files in a work file system are not automatically
+> * **Project file system** - As an alternative to (or sometimes as well as) Scratch space, some HPC 
+>   systems offer fast file system access as a project file system. Typically, this will have 
+>   higher performance than your home directory or network file system and will be
+>   backed up. It differs from scratch space in that files in a project file system are not automatically
 >   deleted for you, you must manage the space yourself.
 > * **Local scratch (job only)** - Some systems may offer local scratch space while executing a job.
 >   (A job is a program which you submit to run on an HPC system, and will be covered later.)
