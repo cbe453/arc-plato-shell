@@ -17,8 +17,15 @@ Connecting to an HPC system is most often done through a tool known as "SSH" (Se
 usually SSH is run through a terminal. So, to begin using an HPC system we need to begin by opening
 a terminal. Different operating systems have different terminals, none of which are exactly the same
 in terms of their features and abilities while working on the operating system. When connected to
-the remote system the experience between terminals will be identical as each will faithfully present
-the same experience of using that system.
+the remote system the experience between terminals will be identical as each terminal is running on 
+the same remote system.
+
+> ## Personalization and Customization
+>
+> Users are not limited to the default shell provided by the remote system. There are many different
+> shells each with their features and perks. Some shells may be more appropriate than others
+> depending on your preferences and workflow.
+{: .callout}
 
 Here is the process for opening a terminal in each operating system.
 
@@ -45,17 +52,6 @@ can find Terminal under "Utilities" in the Applications menu.
 
 ### Windows
 
-#### PowerShell
-
-In recent builds (1809 and later) of Windows 10, you can use the PowerShell
-terminal. The terminal can be started from the Start menu. In older builds of
-Windows 10, the PowerShell terminal is available but the OpenSSH client that
-allows connecting to the remote supercomputer is not installed by default. It
-can be installed as an optional Windows component, however.
-
-In older Windows systems, or if OpenSSH is not installed in Windows 10, you will
-need to use a third-party terminal as described in the next sections.
-
 #### MobaXterm
 
 MobaXterm is a terminal window emulator for Windows and the home edition can be downloaded for free
@@ -63,7 +59,9 @@ from [mobatek.net](https://mobaxterm.mobatek.net/download-home-edition.html). If
 you will note that there are two editions of the home version available: Portable and Installer. The
 portable edition puts all MobaXterm content in a folder on the desktop (or anywhere else you would
 like it) so that it is easy to add plug-ins or remove the software. The installer edition adds
-MobaXterm to your Windows installation and menu as any other program you might install.
+MobaXterm to your Windows installation and menu as any other program you might install. The installer 
+version will require administrative priviliges for your device, so choose the portable version if you 
+do not have administrative access.
 
 Download the version that you would like to use and install it as you would any other software on
 your Windows installation. Once the software is installed you can run it by either opening the
@@ -95,13 +93,21 @@ access to the system and will see a message saying so within the terminal. If yo
 authentication process you can hold the Control (<kbd>Ctrl</kbd>) key and press the <kbd>c</kbd> key
 to exit and start again.
 
+#### PowerShell
+
+In recent builds (1809 and later) of Windows 10, you can use the PowerShell
+terminal. The terminal can be started from the Start menu. In older builds of
+Windows 10, the PowerShell terminal is available but the OpenSSH client that
+allows connecting to the remote supercomputer is not installed by default. It
+can be installed as an optional Windows component, however.
+
 ## Logging onto the system
 
 With all of this in mind, let's connect to a remote HPC system. In this workshop, we will connect to
 {{ site.workshop_host }} --- an HPC system located at the {{ site.workshop_host_location }}. Although it's unlikely
 that every system will be exactly like {{ site.workshop_host }}, it's a very good example of what you can expect from
-an HPC installation. To connect to our example computer, we will use SSH (if you are using
-PuTTY, see above).
+an HPC installation (especially for national compute services hosted by the Digital Research Alliance of Canada). 
+To connect to our example computer, we will use SSH (if you are using PuTTY, see above).
 
 SSH allows us to connect to UNIX computers remotely, and use them as if they were our own. The
 general syntax of the connection command follows the format `ssh yourUsername@some.computer.address`
