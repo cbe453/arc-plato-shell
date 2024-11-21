@@ -18,7 +18,7 @@ attendees prepare their laptop on request.
 
 - **Apple macOS:** Terminal and SSH client are built in.
 
-- **Windows 10, recently updated (build 1809):** The PowerShell terminal and SSH
+- **Windows 10/11:** The PowerShell terminal and SSH
   client are built in. If you prefer, you can use MobaXterm or Putty instead
   (see the next entry).
 
