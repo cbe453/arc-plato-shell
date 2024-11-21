@@ -28,16 +28,16 @@ keypoints:
 Frequently, research problems that use computing can outgrow the desktop or laptop computer where
 they started:
 
-* A statistics student wants to do cross-validate their model. This involves running the model 1000
+* A statistics student wants to cross-validate their model. This involves running the model 1000
   times -- but each run takes an hour. Running on their laptop will take over a month!
 * A genomics researcher has been using small datasets of sequence data, but soon will be receiving a
   new type of sequencing data that is 10 times as large. It's already challenging to open the
-  datasets on their computer -- analyzing these larger datasets will probably crash it.
+  datasets on their computer -- analyzing these larger datasets will be extremely difficult if not impossible!
 * An engineer is using a fluid dynamics package that has an option to run in parallel. So far, they
   haven't used this option on their desktop, but in going from 2D to 3D simulations, simulation time
   has more than tripled and it might be useful to take advantage of that feature.
 
-In all these cases, what is needed is access to more computers than can be used at the same time.
+In all these cases, what is needed is access to more processing power.
 Luckily, large scale computing systems -- shared computing resources with lots of computers -- are
 available at many universities, labs, or through national networks. These resources usually have
 more central processing units(CPUs), CPUs that operate at higher speeds, more memory, more storage,
@@ -60,6 +60,8 @@ Using a cluster often has the following advantages for researchers:
 * **Convenience.** Maybe your calculations just take a long time to run or are otherwise
   inconvenient to run on your personal computer. There's no need to tie up your own computer for
   hours when you can use someone else's instead.
+
+Using a cluster can also have disadvantages, which we can touch on later...
 
 This is how a large-scale compute system like a cluster can help solve problems like those listed at
 the start of the lesson.
