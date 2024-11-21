@@ -25,9 +25,9 @@ attendees prepare their laptop on request.
 - **Older Windows:** Install MobaXterm
   ([http://mobaxterm.mobatek.net](http://mobaxterm.mobatek.net)). Choose “Home
   edition (Installer edition)” on the download page. Alternatively, you can
-  use PuTTY ([https://www.putty.org](https://www.putty.org/)). On Windows 10
-  older than build 1809, you can install OpenSSH for use in PowerShell as an
-  optional Windows component.
+  use PuTTY ([https://www.putty.org](https://www.putty.org/)). PuTTY is also
+  available through Software Center and Self Service on University managed
+  devices.
 
 ## Campus wifi connection
 
