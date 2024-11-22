@@ -101,7 +101,7 @@ draft.txt
 
 ## Reading Files
 
-Let's read the file we just created now. There are a few different ways of doing this, one of which is
+Let's try and view the contents of the file we just created now. There are a few different ways of doing this, one of which is
 reading the entire file with `cat`.
 
 ```
@@ -117,8 +117,8 @@ it's "share and thrive".
 
 By default, `cat` prints out the content of the given file.
 Although `cat` may not seem like an intuitive command with which to read files, it stands for
-"concatenate". Giving it multiple file names will print out the contents of the input files in the order
-specified in the `cat`'s invocation.
+"concatenate". Supplying multiple file names to `cat` will print out the contents of the input files in the order
+given to the commaned.
 For example,
 
 ```
@@ -176,7 +176,7 @@ draft.txt
 
 **Renaming**---How do we go about changing the name of a file?
 It turns out that `mv` is also used to rename files and directories. Although this may not seem
-intuitive at first, think of it as *moving* a file to be stored under a different name. The syntax is
+intuitive at first, think of it as *moving* a file to be stored under a different name. The general syntax is
 quite similar to moving files: `mv oldName newName`.
 
 ```
@@ -288,7 +288,9 @@ confirmation**. Be very careful!
 > Files deleted using `rm` cannot be recovered. Always be careful when using
 > `-r`, and consider using the `-i` option to get a confirmation prompt.
 > Alternatively, use `rm` to remove files, and then `rmdir` to remove the
-> directory once it is empty.
+> directory once it is empty. If you are confident you can safely remove a directory and it's contents,
+> you can supply the `-f` flag, which will forcibly remove files without asking for confirmation. Again,
+> be careful! 
 {: .callout}
 
 ## Looking at files
