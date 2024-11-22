@@ -106,7 +106,7 @@ $ mkdir documents
 ```
 {: .language-bash}
 
-Let's us `ls` again. What do we see?
+Now lets `ls` again. What do we see?
 
 Our folder is there, awesome. What if we wanted to go inside it and do stuff there? We will use the
 `cd` (change directory) command to move around. Let's `cd` into our new documents folder.
@@ -218,7 +218,7 @@ $ pwd
 ```
 {: .output}
 
-Many commands also have multiple behaviours that you can invoke with command line 'flags.' What is a
+Many commands also have multiple behaviours that you can invoke with optional command line 'flags.' What is a
 flag? It's generally just your command followed by a `-` and the name of the flag (sometimes it's
 `--` followed by the name of the flag). You follow the flag(s) with any additional arguments you
 might need.
@@ -419,7 +419,7 @@ Mandatory arguments to long options are mandatory for short options too.
 
 > ## Relative Path Resolution
 >
-> Using the filesystem diagram below, if `pwd` displays `/Users/thing`, what will `ls -F ../backup`
+> Using the filesystem diagram below, if `pwd` displays `/Users/thing`, what will `ls ../backup`
 > display?
 >
 > 1.  `../backup: No such file or directory`
@@ -450,8 +450,8 @@ Mandatory arguments to long options are mandatory for short options too.
 > {: .output}
 >
 > 1.  `ls pwd`
-> 2.  `ls -r -F`
-> 3.  `ls -r -F /Users/backup`
+> 2.  `ls -r`
+> 3.  `ls -r /Users/backup`
 > 4.  Either #2 or #3 above, but not #1.
 >
 > > ## Solution
