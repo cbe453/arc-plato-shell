@@ -52,8 +52,7 @@ SRR307024_1.fastq                            SRR307027_2.fastq
 {: .output}
 
 Now we have a whole bunch of example files in our directory. For this example we are going to learn
-a new command that tells us how long a file is: `wc`. `wc -l file` tells us the length of a file in
-lines.
+a new command that can be used to count different features in a file: `wc`. `wc -l file` tells us the number of lines in a file. `wc` can also be used to count the number of words, characters and bytes in a file.
 
 ```
 $ wc -l dmel-all-r6.19.gtf
@@ -156,12 +155,18 @@ $ wc -l *
 > {: .solution}
 {: .challenge}
 
+There are other wildcards that we can use as well for more control over matches. The wildcards `?` 
+and `[]` can be used to specify any single character or a list/range of possible characters to 
+m`atch, respectively.
+
 ## Redirecting output
 
-Each of the commands we've used so far does only a very small amount of work. However,
-we can chain these small UNIX commands together to perform otherwise complicated actions!
+Each of the commands we've used so far write output to the terminal and don't accomplish very much on their own. 
+To make use of these outputs, we can redirect them to output files, to other commands/programs or both! 
+This is known as *output redirection* and *piping*.
 
-For our first foray into *piping*, or redirecting output, we are going to use the `>` operator to
+
+For our first foray into *output redirection*, we are going to use the `>` operator to
 write output to a file. When using `>`, whatever is on the left of the `>` is written to the
 filename you specify on the right of the arrow. The actual syntax looks like `command > filename`.
 
@@ -270,10 +275,10 @@ wc: fastq: Is a directory
 {: .output}
 
 Success! The `wc: fastq: Is a directory` error message was written to the file. Also, note how the
-file was silently overwritten by directing output to the same place as before. Sometimes this is not
-the behaviour we want. How do we append (add) to a file instead of overwriting it?
+file was silently overwritten by directing output to the same place as before. Sometimes we would like 
+to append (add) to an existing file rather than overwriting it. How do we do that?
 
-Appending to a file is done the same was as redirecting output. However, instead of `>`, we will use
+Appending to a file is similar to our previous output redirection example. However, instead of `>`, we will use
 `>>`.
 
 ```
@@ -299,10 +304,8 @@ We now know how to redirect `stdout` and `stderr` to files. We can actually take
 and redirect output (`stdout`) from one command to serve as the input (`stdin`) for the next. To do
 this, we use the `|` (pipe) operator.
 
-`grep` is an extremely useful command. It finds things for us within files. Basic usage (there are a
-lot of options for more clever things, see the `man` page) uses the syntax `grep whatToFind
-fileToSearch`. Let's use `grep` to find all of the entries pertaining to the `Act5C` gene in
-*Drosophila melanogaster*.
+`grep` is an extremely useful command. It finds things for us within files using *regular expressions*. 
+Basic usage uses the syntax `grep whatToFind fileToSearch`. Let's use `grep` to find all of the entries pertaining to the `Act5C` gene in *Drosophila melanogaster*.
 
 ```
 $ grep Act5C dmel-all-r6.19.gtf
@@ -337,6 +340,9 @@ $ grep Act5C dmel-all-r6.19.gtf | wc -l
 
 Note that this is just the same as redirecting output to a file, then reading the number of lines
 from that file.
+
+With `grep`, there are a lot of options for more clever things, see the `man` page and online resources for regular 
+expressions and their usefulness in Unix and programming in general.
 
 > ## Writing commands using pipes
 >
