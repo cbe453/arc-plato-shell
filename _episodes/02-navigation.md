@@ -435,7 +435,7 @@ Mandatory arguments to long options are mandatory for short options too.
 > 2.  `2023-12-23 2024-06-01 2025-01-05`
 > 3.  `2023-12-23/ 2024-06-01/ 2025-01-05/`
 > 4.  `original/ pnas_final/ pnas_sub/`
-> <img src="../fig/filesystem-challenge.svg" width="600" height="400" />
+> <img src="../fig/filesystem-challenge.svg" width="630" height="400" />
 >
 > > ## Solution
 > > 1. No: there *is* a directory `backup` in `/Users`.
