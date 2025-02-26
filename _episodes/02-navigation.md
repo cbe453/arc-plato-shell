@@ -161,7 +161,16 @@ $ cd ~
 
 The "home" directory is the one where we generally want to keep all of our files. Other folders on a
 UNIX OS contain system files, and get modified and changed as you install new software or upgrade
-your OS.
+your OS. 
+
+Below is an example of a simplified Linux file system.
+
+![File System Example](../fig/filesystem.svg)
+
+We can see that everything is contained under one directory, the root (/). Every file and directory 
+has an absolute (explicit) path from the root to that file or directory. Files and diretcories can 
+also have 'relative' paths, which use the . and .. properties of a directory, which we will discuss 
+shortly.
 
 > ## Using HPC filesystems
 > On HPC systems, you have a number of places where you can store your files. These differ in both
