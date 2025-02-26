@@ -165,7 +165,7 @@ your OS.
 
 Below is an example of a simplified Linux file system.
 
-<img src="../fig/filesystem.svg" width="500" height="500" />
+<img src="../fig/filesystem.svg" width="400" height="400" />
 
 We can see that everything is contained under one directory, the root (/). Every file and directory 
 has an absolute (explicit) path from the root to that file or directory. Files and diretcories can 
@@ -435,8 +435,7 @@ Mandatory arguments to long options are mandatory for short options too.
 > 2.  `2012-12-01 2013-01-08 2013-01-27`
 > 3.  `2012-12-01/ 2013-01-08/ 2013-01-27/`
 > 4.  `original/ pnas_final/ pnas_sub/`
->
-> ![File System for Challenge Questions](../fig/filesystem-challenge.svg)
+> <img src="../fig/filesystem-challenge.svg" width="400" height="400" />
 >
 > > ## Solution
 > > 1. No: there *is* a directory `backup` in `/Users`.
