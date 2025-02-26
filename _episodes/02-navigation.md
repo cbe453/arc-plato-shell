@@ -428,12 +428,12 @@ Mandatory arguments to long options are mandatory for short options too.
 
 > ## Relative Path Resolution
 >
-> Using the filesystem diagram below, if `pwd` displays `/Users/thing`, what will `ls ../backup`
+> Using the filesystem diagram below, if `pwd` displays `/project/thing`, what will `ls ../backup`
 > display?
 >
 > 1.  `../backup: No such file or directory`
-> 2.  `2012-12-01 2013-01-08 2013-01-27`
-> 3.  `2012-12-01/ 2013-01-08/ 2013-01-27/`
+> 2.  `2023-12-23 2024-06-01 2025-01-05`
+> 3.  `2023-12-23/ 2024-06-01/ 2025-01-05/`
 > 4.  `original/ pnas_final/ pnas_sub/`
 > <img src="../fig/filesystem-challenge.svg" width="600" height="400" />
 >
