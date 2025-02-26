@@ -165,7 +165,7 @@ your OS.
 
 Below is an example of a simplified Linux file system.
 
-![File System Example](../fig/filesystem.svg)
+<img src="../fig/filesystem.svg" width="500" height="500" />
 
 We can see that everything is contained under one directory, the root (/). Every file and directory 
 has an absolute (explicit) path from the root to that file or directory. Files and diretcories can 
