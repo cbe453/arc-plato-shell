@@ -428,7 +428,7 @@ Mandatory arguments to long options are mandatory for short options too.
 
 > ## Relative Path Resolution
 >
-> Using the filesystem diagram below, if `pwd` displays `/project/thing`, what will `ls ../backup`
+> Using the filesystem diagram below, if `pwd` displays `/project/thing/`, what will `ls ../backup/`
 > display?
 >
 > 1.  `../backup: No such file or directory`
