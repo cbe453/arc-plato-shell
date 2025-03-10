@@ -48,7 +48,7 @@ $ nano draft.txt
 ```
 {: .language-bash}
 
-![Nano in action]({{ site.url }}{{ site.baseurl }}/fig/nano-screenshot.png)
+![Nano interface]({{ site.url }}{{ site.baseurl }}/fig/nano-screenshot.png)
 
 Nano defines a number of *shortcut keys* (prefixed by the <kbd>Control</kbd> or <kbd>Ctrl</kbd> key)
 to perform actions such as saving the file or exiting the editor.
