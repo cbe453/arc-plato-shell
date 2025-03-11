@@ -438,18 +438,18 @@ Mandatory arguments to long options are mandatory for short options too.
 > <img src="../fig/filesystem-challenge.svg" width="630" height="400" />
 >
 > > ## Solution
-> > 1. No: there *is* a directory `backup` in `/Users`.
-> > 2. No: this is the content of `Users/thing/backup`,
+> > 1. No: there *is* a directory `backup` in `/project`.
+> > 2. No: this is the content of `project/thing/backup`,
 > >    but with `..` we asked for one level further up.
 > > 3. No: see previous explanation.
-> > 4. Yes: `../backup/` refers to `/Users/backup/`.
+> > 4. Yes: `../backup/` refers to `/project/backup/`.
 > {: .solution}
 {: .challenge}
 
 > ## `ls` Reading Comprehension
 >
 > Assuming a directory structure as in the above Figure (File System for Challenge Questions), if
-> `pwd` displays `/Users/backup`, and `-r` tells `ls` to display things in reverse order, what
+> `pwd` displays `/project/backup`, and `-r` tells `ls` to display things in reverse order, what
 > command will display:
 >
 > ~~~
