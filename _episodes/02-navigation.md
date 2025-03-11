@@ -348,7 +348,7 @@ Manual page ls(1) line 1 (press h for help or q to quit)
 To navigate through the `man` pages, you may use the up and down arrow keys to move line-by-line, or
 try the spacebar and "b" keys to skip up and down by full page. Quit the `man` pages by typing "q".
 
-Alternatively, most commands you run will have a `--help` option that displays addition information
+Alternatively, most commands you run will have a `--help` option that displays additional information
 For instance, with `ls`:
 
 ```
