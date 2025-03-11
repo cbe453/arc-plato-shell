@@ -66,7 +66,7 @@ do not have administrative access.
 Download the version that you would like to use and install it as you would any other software on
 your Windows installation. Once the software is installed you can run it by either opening the
 folder installed with the portable edition and double-clicking on the executable file named
-`MobaXterm_Personal_11.1` (your version number may vary) or, if the installer edition was used,
+`MobaXterm_Personal_XX.X` (your version number may vary) or, if the installer edition was used,
 finding the executable through either the Start menu or the Windows search option.
 
 Once the MobaXterm window is open you should see a large button in the middle of that window with
