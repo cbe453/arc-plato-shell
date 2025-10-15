@@ -157,7 +157,7 @@ $ wc -l *
 
 There are other wildcards that we can use as well for more control over matches. The wildcards `?` 
 and `[]` can be used to specify any single character or a list/range of possible characters to 
-m`atch, respectively.
+match, respectively.
 
 ## Redirecting output
 
