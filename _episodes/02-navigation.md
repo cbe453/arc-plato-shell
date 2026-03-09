@@ -57,7 +57,7 @@ More specifically, when we type `whoami` the shell:
 Next, let's find out where we are by running a command called `pwd` (which stands for "print working
 directory"). ("Directory" is another word for "folder"). At any moment, our **current working directory** (where we are) is the directory that
 the computer assumes we want to run commands in unless we explicitly specify something else. Here,
-the computer's response is `{{ site.workshop_host_homedir }}/yourUsername/HPC`, which is ``yourUsername``’s **home directory**.
+the computer's response is `{{ site.workshop_host_homedir }}/yourUsername`, which is ``yourUsername``’s **home directory**.
 Note that the location of your home directory may differ from system to system.
 
 ~~~
@@ -65,7 +65,7 @@ $ pwd
 ~~~
 {: .language-bash}
 ~~~
-{{ site.workshop_host_homedir }}/yourUsername/HPC
+{{ site.workshop_host_homedir }}/yourUsername
 ~~~
 {: .output}
 
@@ -117,7 +117,7 @@ $ pwd
 ```
 {: .language-bash}
 ```
-/home/yourUsername/HPC/documents
+/home/yourUsername/documents
 ```
 {: .output}
 
@@ -127,7 +127,7 @@ if we get "lost" and want to get back to where we started?
 To go back to your home directory, the following three commands will work:
 
 ```
-$ cd {{ site.workshop_host_homedir }}/yourUserName/HPC
+$ cd {{ site.workshop_host_homedir }}/yourUserName
 $ cd ~
 $ cd
 ```
@@ -135,7 +135,7 @@ $ cd
 
 
 What is the `~` character? When using the shell, `~` is a shortcut that represents
-`{{ site.workshop_host_homedir }}/yourUserName/HPC`. 
+`{{ site.workshop_host_homedir }}/yourUserName`. 
 
 A quick note on the structure of a UNIX (Linux/Mac/Android/Solaris/etc) filesystem. Directories and
 absolute paths (i.e. exact position in the system) are always prefixed with a `/`. `/` by itself is the "root"
@@ -149,9 +149,9 @@ $ ls
 ```
 {: .language-bash}
 ```
-bin   CMC    datastore   etc         lib    lost+found  mnt      opt   run   sys       usr
-boot  cvmfs  datastore2  home  lib64  media       net      proc  sbin  tftpboot  var
-cm    data   dev         home        local  misc        oldhome  root  srv   tmp
+bin   CMC    datastore   etc      lib    lost+found  mnt      opt   run   sys       usr
+boot  cvmfs  datastore2  home     lib64  media       net      proc  sbin  tftpboot  var
+cm    data   dev         local    misc        oldhome  root  srv   tmp
 ```
 {: .output}
 ```
@@ -214,7 +214,7 @@ $ pwd
 {: .language-bash}
 
 ```
-{{ site.workshop_host_homedir }}/yourUsername/HPC/documents
+{{ site.workshop_host_homedir }}/yourUsername/documents
 ```
 {: .output}
 ```
@@ -223,7 +223,7 @@ $ pwd
 ```
 {: .language-bash}
 ```
-{{ site.workshop_host_homedir }}/yourUsername/HPC
+{{ site.workshop_host_homedir }}/yourUsername
 ```
 {: .output}
 
