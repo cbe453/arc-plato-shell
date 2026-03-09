@@ -117,7 +117,7 @@ $ pwd
 ```
 {: .language-bash}
 ```
-/globalhome/yourUsername/HPC/documents
+/home/yourUsername/HPC/documents
 ```
 {: .output}
 
@@ -150,7 +150,7 @@ $ ls
 {: .language-bash}
 ```
 bin   CMC    datastore   etc         lib    lost+found  mnt      opt   run   sys       usr
-boot  cvmfs  datastore2  globalhome  lib64  media       net      proc  sbin  tftpboot  var
+boot  cvmfs  datastore2  home  lib64  media       net      proc  sbin  tftpboot  var
 cm    data   dev         home        local  misc        oldhome  root  srv   tmp
 ```
 {: .output}
